@@ -1,0 +1,12 @@
+# Probado con Python 3.12
+torch>=2.1
+torchvision>=0.16
+numpy>=1.26
+opencv-python>=4.9
+matplotlib>=3.8
+pandas>=2.1
+scipy>=1.11
+statsmodels>=0.14
+ultralytics>=8.3        # solo para la etapa de deteccion
+onnx>=1.15              # solo para exportar el modelo desplegable
+onnxruntime>=1.17

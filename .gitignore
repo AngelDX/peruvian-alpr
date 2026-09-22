@@ -1,0 +1,34 @@
+# Datos: van en Zenodo, nunca en el repositorio
+*.jpg
+*.jpeg
+*.png
+*.pdf
+*.tsv
+*.csv
+!results/latex/*.tex
+data/
+data_sub/
+crops/
+images/
+Peruvian_ALPR_Dataset_final/
+dataset_nuevo_validacion/
+
+# Pesos y salidas de entrenamiento
+*.pt
+*.onnx
+ckpt/
+runs/
+logs/
+*.log
+
+# Resultados intermedios que contienen matriculas
+results/matriz_*.csv
+results/*.csv
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env*/
+.ipynb_checkpoints/

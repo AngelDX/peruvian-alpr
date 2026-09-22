@@ -1,0 +1,33 @@
+\begin{table}[H]
+\caption{Coincidencia exacta sobre \emph{Gold}-B por número de pasadas del vehículo. Media de tres semillas
+en los modelos entrenados.\label{tab:frecuencia}}
+\begin{tabularx}{\textwidth}{Xrrrr}
+\toprule
+\textbf{Sistema} & \textbf{1--2} (n = 539) & \textbf{3--9} (n = 290) & \textbf{10--49} (n = 196) & \textbf{50+} (n = 105) \\
+\midrule
+LPRNet afinado & 87.8\,\% & 94.6\,\% & 97.1\,\% & 95.9\,\% \\
+CRNN afinado & 85.8\,\% & 92.2\,\% & 94.0\,\% & 94.9\,\% \\
+LPRNet & 79.5\,\% & 83.7\,\% & 90.6\,\% & 90.8\,\% \\
+CRNN & 74.5\,\% & 80.2\,\% & 88.1\,\% & 88.9\,\% \\
+PaddleOCR + corrector & 40.4\,\% & 57.6\,\% & 71.9\,\% & 87.6\,\% \\
+PaddleOCR crudo & 36.4\,\% & 50.7\,\% & 62.2\,\% & 83.8\,\% \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{table}[H]
+\caption{Coincidencia exacta sobre \emph{Gold}-B por clase lumínica, por elevación solar real. Media de tres semillas
+en los modelos entrenados.\label{tab:luz}}
+\begin{tabularx}{\textwidth}{Xrrr}
+\toprule
+\textbf{Sistema} & \textbf{Día} (n = 829) & \textbf{Crepúsculo} (n = 32) & \textbf{Noche} (n = 269) \\
+\midrule
+LPRNet afinado & 92.0\,\% & 94.8\,\% & 91.2\,\% \\
+CRNN afinado & 89.7\,\% & 92.7\,\% & 89.5\,\% \\
+LPRNet & 85.9\,\% & 79.2\,\% & 76.7\,\% \\
+CRNN & 80.9\,\% & 67.7\,\% & 77.1\,\% \\
+PaddleOCR + corrector & 58.6\,\% & 59.4\,\% & 42.0\,\% \\
+PaddleOCR crudo & 52.4\,\% & 56.2\,\% & 37.5\,\% \\
+\bottomrule
+\end{tabularx}
+\end{table}

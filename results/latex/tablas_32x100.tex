@@ -1,0 +1,19 @@
+% Generado por regenerar_cifras_32x100.py. Sustituye a tab:reconocimiento.
+\begin{table}[H]
+\caption{Coincidencia exacta y CER sobre las dos verdades-terreno, a $32\times100$\,px.
+Media y desviación típica de tres semillas para los modelos entrenados.\label{tab:reconocimiento}}
+\begin{tabularx}{\textwidth}{Xrrrr}
+\toprule
+& \multicolumn{2}{c}{\textbf{\emph{Gold}-B}} & \multicolumn{2}{c}{\textbf{\emph{Gold}-A}} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+\textbf{Sistema} & \textbf{Exacta} & \textbf{CER} & \textbf{Exacta} & \textbf{CER} \\
+\midrule
+LPRNet afinado & 91.89\,\% $\pm$ 0.57 & 0.0155 & 97.36\,\% $\pm$ 0.07 & 0.0046 \\
+CRNN afinado & 89.73\,\% $\pm$ 1.48 & 0.0202 & 97.23\,\% $\pm$ 0.27 & 0.0046 \\
+LPRNet & 83.54\,\% $\pm$ 0.84 & 0.0310 & 92.50\,\% $\pm$ 0.66 & 0.0135 \\
+CRNN & 79.65\,\% $\pm$ 1.51 & 0.0416 & 90.49\,\% $\pm$ 0.85 & 0.0170 \\
+PaddleOCR + corrector & 54.69\,\% & 0.0922 & 95.40\,\% & 0.0098 \\
+PaddleOCR crudo & 48.94\,\% & 0.1128 & 65.09\,\% & 0.0646 \\
+\bottomrule
+\end{tabularx}
+\end{table}
