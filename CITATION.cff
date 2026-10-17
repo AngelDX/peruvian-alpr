@@ -19,8 +19,12 @@ authors:
     given-names: "David"
     orcid: "https://orcid.org/0000-0002-5836-2018"
     affiliation: "Universidad Peruana Unión"
+  - family-names: "Quea-Lopez"
+    given-names: "Godofredo"
+    orcid: "https://orcid.org/0000-0001-5325-4133"
+    affiliation: "Universidad Peruana Unión"
 license: MIT
-repository-code: "https://github.com/USUARIO/REPO"
+repository-code: "https://github.com/AngelDX/peruvian-alpr"
 keywords:
   - license plate recognition
   - knowledge distillation

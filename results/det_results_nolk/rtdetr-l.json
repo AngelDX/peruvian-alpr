@@ -1,0 +1,10 @@
+{
+  "name": "rtdetr-l",
+  "map50_95": 0.8805,
+  "map50": 0.9947,
+  "precision": 0.9895,
+  "recall": 0.9974,
+  "ms_per_img": 13.632,
+  "train_min": 28.0,
+  "epochs": 60
+}

@@ -1,0 +1,10 @@
+{
+  "name": "yolo11n",
+  "map50_95": 0.9192,
+  "map50": 0.995,
+  "precision": 0.9973,
+  "recall": 1.0,
+  "ms_per_img": 1.267,
+  "train_min": 12.5,
+  "epochs": 60
+}

@@ -1,0 +1,30 @@
+{
+  "n_imagenes": 2600,
+  "ventana_s": 5,
+  "semilla": 0,
+  "grupos": 748,
+  "original": {
+    "conteo": {
+      "train": 1820,
+      "test": 260,
+      "val": 520
+    },
+    "fuga": {
+      "img_comparte_placa_pct": 54.04,
+      "img_comparte_rafaga_pct": 50.0,
+      "n_rafagas": 1291
+    }
+  },
+  "nuevo": {
+    "conteo": {
+      "train": 1820,
+      "val": 390,
+      "test": 390
+    },
+    "fuga": {
+      "img_comparte_placa_pct": 0.0,
+      "img_comparte_rafaga_pct": 0.0,
+      "n_rafagas": 1291
+    }
+  }
+}

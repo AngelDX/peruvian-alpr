@@ -1,0 +1,10 @@
+{
+  "name": "yolov8n",
+  "map50_95": 0.9201,
+  "map50": 0.995,
+  "precision": 0.9973,
+  "recall": 1.0,
+  "ms_per_img": 1.179,
+  "train_min": 11.8,
+  "epochs": 60
+}

@@ -4,9 +4,9 @@ Código de análisis del artículo *Reconocimiento de matrículas peruanas en el
 modelos LPRNet y CRNN destilados de un OCR genérico con corrección determinista por
 posición*, enviado a **Sensors** (MDPI).
 
-Un sistema ALPR con cámara IP fija operó sin interrupción durante 16 meses en el
-ingreso vehicular de una universidad del altiplano peruano y registró 579 292 recortes
-de matrícula de 29 928 placas únicas. Sobre ese corpus se destilan reconocedores
+Un sistema ALPR con cámara IP fija operó sin interrupción 465 días (algo más de 15
+meses, del 2025-03-07 al 2026-06-15) en el ingreso vehicular de una universidad del
+altiplano peruano y registró 579 292 recortes de matrícula de 29 928 placas únicas. Sobre ese corpus se destilan reconocedores
 compactos a partir de un OCR genérico corregido con reglas de posición, y se estudia
 bajo qué condiciones de evaluación la conclusión cambia de signo.
 
@@ -92,6 +92,11 @@ corridas individuales debe atribuirse a ruido, no al modelo.
 las épocas dos y siete y después desciende, mientras la pérdida de entrenamiento sigue
 cayendo. Los scripts conservan el mejor punto de control, nunca el último.
 
+**La unidad de análisis es el recorte, no la placa.** Gold-A tiene 782 recortes de 524
+matrículas (muestreo por evento, hasta diez recortes por placa). Gold-B tiene 1 130 de
+1 074, porque 53 placas aportan entre dos y cuatro capturas. El retenido, 689 de 667.
+Los contrastes apareados se calculan sobre las filas.
+
 **Cuidado al estratificar por área en Gold-B.** Ese conjunto sobremuestrea la noche a
 propósito, y el área está correlacionada con la condición lumínica: su cuartil de
 matrículas grandes contiene un 34 % de capturas nocturnas frente al 11 % del cuartil
@@ -104,7 +109,8 @@ Si usas este código, cita el artículo y el conjunto de datos:
 ```bibtex
 @article{CondoriCoaquira2026alpr,
   author  = {Condori-Coaquira, Angel Rosendo and Tocto-Cano, Esteban and
-             Humpiri-Flores, Milton Edward and Mamani-Pari, David},
+             Humpiri-Flores, Milton Edward and Mamani-Pari, David and
+             Quea-Lopez, Godofredo},
   title   = {Peruvian License Plate Recognition at the Edge: Compact LPRNet and
              CRNN Models Distilled from a Rule-Corrected Generic OCR},
   journal = {Sensors},
